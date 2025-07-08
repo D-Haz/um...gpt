@@ -19,6 +19,7 @@ No accounts, no data collection, no AI? Just good old-fashioned human confusion 
 
 ## Working on it?
 
+- so many small bugs in chat connection.
 - Proper UI fixes...oof
 - init messages fade in and then out
 - show model change message for both users
