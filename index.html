@@ -75,19 +75,20 @@
         <div class="input-container">
             <div class="input-wrapper">
                 <textarea id="inputMsg" placeholder="Message umGPT..." rows="1"></textarea>
+
+                <button id="sendBtn" class="send-button" disabled>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 10L18 2L12 10L18 18L2 10Z" fill="currentColor"/>
+                    </svg>
+                </button>
                 <div class="model-selector">
-    <select id="modelSelect">
+                    <select id="modelSelect" class="model-select bg-black bg-opacity-50 text-white p-2 rounded-lg">
         <option value="beta">umGPT-0.0001beta (Still Learning Basic Math™)</option>
         <option value="oops">umGPT-Oops (Mistakes Guaranteed)</option>
         <option value="confused">umGPT-Confused (More Questions Than Answers)</option>
         <option value="sarcasm">umGPT-S (Sarcasm Supreme)</option>        
     </select>
 </div>
-                <button id="sendBtn" class="send-button" disabled>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M2 10L18 2L12 10L18 18L2 10Z" fill="currentColor"/>
-                    </svg>
-                </button>
             </div>
         </div>
     </div>
