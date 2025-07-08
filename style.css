@@ -100,7 +100,7 @@ body {
     display: none;
     flex-direction: column;
     height: 100vh;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     background: white;
 }
@@ -272,7 +272,7 @@ body {
 /* Input Container */
 .input-container {
     padding: 1.5rem;
-    background: white;
+    background: rgb(15, 0, 19);
      display: none;
 }
 
