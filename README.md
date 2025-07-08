@@ -1,6 +1,6 @@
 # um...gpt?
 
-No accounts, no data collection, no AI. Just good old-fashioned human confusion over the internet.
+No accounts, no data collection, no AI? Just good old-fashioned human confusion over the internet.
 
 ## How It Works
 
@@ -19,7 +19,7 @@ No accounts, no data collection, no AI. Just good old-fashioned human confusion 
 
 ## Working on it?
 
-- Proper UI fixes
+- Proper UI fixes...oof
 - init messages fade in and then out
 - show model change message for both users
 - "taking a break" button for AI interns
