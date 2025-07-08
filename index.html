@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>um...GPT?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing">
+        <div class="landing-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+                        <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                </div>
+                <h1>um...GPT?</h1>
+            </div>
+            <p class="tagline">Totally real AI. Much intelligence. Very wow.</p>
+        </div>
+        
+        <div class="start-section">
+            <button id="startBtn" class="start-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 2L3 7v11h4v-6h6v6h4V7l-7-5z" fill="currentColor"/>
+                </svg>
+                Start a Chat
+            </button>
+            <p class="start-description">Experience the future of conversation. </p>
+              <p class="start-description">Definitely not ChatGPT. </p>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chatContainer" class="chat-container">
+        <div class="chat-header">
+            <div class="chat-header-left">
+                <div class="logo-small">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+                        <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                </div>
+                <span>umGPT</span>
+            </div>
+            <div class="chat-header-right">
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span id="statusText">Connecting...</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="chatDisplay" class="chat-display">
+            <div class="welcome-message">
+                <div class="avatar bot-avatar">
+                    <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+                        <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm um...GPT, your definitely for real smart AI assistant. How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea id="inputMsg" placeholder="Message umGPT..." rows="1"></textarea>
+                <div class="model-selector">
+    <select id="modelSelect">
+        <option value="beta">umGPT-0.0001beta (Still Learning Basic Math™)</option>
+        <option value="oops">umGPT-Oops (Mistakes Guaranteed)</option>
+        <option value="confused">umGPT-Confused (More Questions Than Answers)</option>
+        <option value="sarcasm">umGPT-S (Sarcasm Supreme)</option>        
+    </select>
+</div>
+                <button id="sendBtn" class="send-button" disabled>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 10L18 2L12 10L18 18L2 10Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAPTCHA -->
+    <div id="captchaModal" class="modal">
+        <div class="modal-content">
+            <div class="captcha-header">
+                <div class="captcha-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#34a853"/>
+                    </svg>
+                </div>
+                <h3>reCAPTCHA</h3>
+            </div>
+            
+            <div class="captcha-content">
+                <div class="captcha-checkbox">
+                    <input type="checkbox" id="robotCheck">
+                    <label for="robotCheck">Beep boop I'm a robot</label>
+                </div>
+                
+                <div class="captcha-challenge" id="captchaChallenge" style="display: none;">
+                    <p>Select all images with <strong id="challengeType">traffic lights</strong>:</p>
+                    <div class="image-grid" id="imageGrid">
+                        <!-- by JavaScript -->
+                    </div>
+                    <button id="verifyCaptcha" class="verify-button">Verify</button>
+                </div>
+                
+                <div class="captcha-error" id="captchaError"></div>
+            </div>
+            
+            <div class="captcha-footer">
+                <div class="recaptcha-info">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23666' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z'/%3E%3C/svg%3E" alt="info" width="16" height="16">
+                    <div>
+                        <div>Privacy - Terms</div>
+                        <div style="font-size: 10px; color: #666;">Protected by reCAPTCHA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p><s>Finding the least qualified bot impersonator...</s></br> er, I mean, connecting to our AI servers...</p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <span>© 2025 umGPT - A parody project. Not affiliated with OpenAI.</span>
+            <div class="footer-links">
+                <a href="#" id="clockin">🕐 Clock in</a>
+                <a href="https://github.com/D-Haz/um...gpt" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+ <script>
+    function appendMessage(text, type) {
+      const messageWrapper = document.createElement('div');
+      messageWrapper.classList.add('message-wrapper', type);
+      const messageContent = document.createElement('div');
+      messageContent.classList.add('message-content');
+      messageContent.textContent = text;
+      messageWrapper.appendChild(messageContent);
+      document.getElementById('chatDisplay').appendChild(messageWrapper);
+      messageWrapper.scrollIntoView();
+    }
+  </script>
+    <script src="script.js"></script>
+</body>
+</html>
