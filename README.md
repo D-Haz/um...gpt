@@ -1,6 +1,8 @@
 # um...gpt?
 
-No accounts, no data collection, no AI? Just good old-fashioned human confusion over the internet.
+No accounts, no data collection, no AI...? Just good old-fashioned human confusion over the internet.
+
+(For an extra layer of meta I tried to generate the code entirely using bots, but I just could not keep asking it to center a button for the 50th time so unfortunately the code has been touched by humans...blegh)
 
 ## How It Works
 
@@ -36,3 +38,6 @@ npm install
 npm start
 
 # Update frontend to use localhost if needed
+```
+
+Made by humans using bots for humans pretending to be bots pretending to be humans.
