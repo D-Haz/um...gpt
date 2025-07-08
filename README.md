@@ -17,6 +17,14 @@ No accounts, no data collection, no AI. Just good old-fashioned human confusion 
 - Free backend (Render) and static frontend (GitHub Pages).
 - Costs $0. Humor value: variable.
 
+## Working on it?
+
+- Proper UI fixes
+- init messages fade in and then out
+- show model change message for both users
+- "taking a break" button for AI interns
+- ?
+
 ## Local Development
 
 ```bash
