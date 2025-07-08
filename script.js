@@ -152,7 +152,7 @@ function typeMessage(message, type) {
     avatar.className = `avatar ${type}-avatar`;
     if (type === 'bot') {
         avatar.innerHTML = `<svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+            <circle cx="16" cy="16" r="16" fill="#8c10b9"/>
             <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
             <circle cx="16" cy="16" r="3" fill="white"/>
         </svg>`;
@@ -248,7 +248,7 @@ function showMessage1(message, type, timestamp) {
     if (type === 'bot') {
         avatar.innerHTML = `
             <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+                <circle cx="16" cy="16" r="16" fill="#8c10b9"/>
                 <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
                 <circle cx="16" cy="16" r="3" fill="white"/>
             </svg>
@@ -288,7 +288,7 @@ function showMessage1(message, type, timestamp) {
         if (type === 'bot') {
             avatar.innerHTML = `
                 <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                    <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+                    <circle cx="16" cy="16" r="16" fill="#8c10b9"/>
                     <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
                     <circle cx="16" cy="16" r="3" fill="white"/>
                 </svg>
@@ -326,7 +326,7 @@ function showTypingIndicator() {
     const avatar = document.createElement('div');
     avatar.className = 'avatar bot-avatar';
     avatar.innerHTML = `<svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+        <circle cx="16" cy="16" r="16" fill="#8c10b9"/>
         <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
         <circle cx="16" cy="16" r="3" fill="white"/>
     </svg>`;
@@ -366,7 +366,7 @@ function resetToLanding() {
             <div class="welcome-message">
                 <div class="avatar bot-avatar">
                     <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                        <circle cx="16" cy="16" r="16" fill="#10a37f"/>
+                        <circle cx="16" cy="16" r="16" fill="#8c10b9"/>
                         <path d="M16 6c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="white"/>
                         <circle cx="16" cy="16" r="3" fill="white"/>
                     </svg>
