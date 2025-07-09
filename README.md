@@ -5,7 +5,7 @@ No accounts, no data collection, no AI...? Just good old-fashioned human confusi
 ### ALL CONTRIBUTIONS WELCOME AND ECNOURAGED. EVEN HUMANS.
 ___
 
-_(For an extra layer of meta I tried to generate the code entirely using bots, but I just could not keep asking it to center a button for the 50th time so unfortunately the code has been touched by humans...**blegh**)_
+_(For an extra layer of meta I tried to generate the code entirely using bots, but I just could not keep asking it to center a button for the 50th time so unfortunately the code has been touched by humans already...**blegh**)_
 
 ## How It Works
 
